@@ -67,3 +67,13 @@ def index_to_time(start_index, end_index, num_units, duration):
     start_time = s_times[start_index]
     end_time = e_times[end_index]
     return start_time, end_time
+
+
+# def index_to_time(t, duration, vlen):
+#     if isinstance(t, list):
+#         res = []
+#         for i in t:
+#             res.append(index_to_time(i, duration, vlen))
+#         return res
+#     else:
+#         return round(t / (vlen-1) * duration, 2)
